@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html , body {
+    height : 100vh;
+    width : 100vw;
+}
+
+main{
+    width : 100vw;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+main header{
+    height : 40vh;
+    width : 100vw;
+}
+
+main header .content{
+    padding : 3vw;
+    width : 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main header .content .middle h1{
+   font-size: 6vw;
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 300;
+   line-height: none;
+}
+
+main header .content .middle h1 span{
+    font-weight: 800;
+
+}
+main header .content .middle p{
+    font-size: 1vw;
+    color : grey;
+    letter-spacing: 8px;
+    word-spacing: 7px;
+    padding-left :1.3vw;
+}
+main header .content i{
+    font-size: 2.5vh;
+    padding : 1vh;
+    color: rgb(50, 49, 49);
+    transition : 0.2s linear;
+}
+main header i:hover{
+    color : rgb(252, 5, 5);
+ }
+
+main header nav{
+    width :100%;
+    display: flex;
+    justify-content: center;
+    gap: 8vh;
+}
+
+main header nav a{
+    font-size: 1vw;
+    font-weight: 600;
+   text-decoration: none;
+   color : rgb(61, 60, 60);
+   transition : 0.2s linear;
+}
+main header nav a:first-child{
+   color : rgb(234, 16, 16);;
+}
+
+
+main header nav a:hover{
+   color : rgb(252, 5, 5);
+}
+
+/*************bottom content *********/
+main .bottom{
+    height : 55vh;
+    width : 100vw;
+    background-color: black;
+    /* background-image: url("OIP.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position : relative;
+}
+
+main .bottom .left{
+   height : 95%;
+   width : 30%;
+   background-color: azure;
+   padding :2vw;
+   border-radius: 2vh;
+   position: absolute;
+   left : 7%;
+}
+
+main .bottom .left div{
+    padding : 1vw 0;
+    width :100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+main .bottom .left div a{
+    font-size: 1vw;
+    font-weight: 600;
+   text-decoration: none;
+   color : rgb(61, 60, 60);
+   transition : 0.2s linear;
+   padding : 1vw 0;
+}
+
+main .bottom .left div a:nth-child(2){
+    border-bottom :2px solid rgb(249, 6, 6)
+}
+main .bottom .left h1{
+   font-size: 1.5vw;
+   line-height: 2vw;
+}
+main .bottom .left p{
+   font-size: 1vw;
+   line-height: 1.5vw;
+   padding : 2vw 0;
+}
+
+main .bottom img{
+    width : 70%;
+    height : 100%;
+}
+
+/******************stories section ******************/
+main .stories{
+   text-align: center;
+
+}
+main .stories h1:first-child{
+    font-size: 1.8vw;
+    line-height: 5vw;
+}
+main .stories .card{
+    height : 60vh;
+    width : 50vh;
+    padding : 1vh;
+    display : inline-block;
+    margin : 4vh;
+    text-align: start;
+    position:relative;
+}
+main .stories .card .img-box{
+    height : 30vh;
+    width : 100%;
+    margin-bottom: 5vh;
+}
+main .stories .card img{
+    width :100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .stories .card .heading{
+    width : 70%;
+    height : max-content;
+    background-color: rgb(252, 249, 249);
+    padding : 1vh;
+    font-size: 2vh;
+    position: absolute;
+    top : 25vh;
+    left: 1vh;
+    bottom : 30px;
+    border-radius : 4px;
+}
+main .stories a{
+    text-decoration: none;
+    font-size: 2vh;
+    color :rgb(249, 6, 6);
+}
+
+main .stories .card p{
+    font-size: 1.7vh;
+    padding : 1vh 0;
+    line-height: 3vh;
+}
+
+/********************media***********************/
+@media (max-width : 600px){
+    /*********header section********/
+    main header{
+        height : max-content;
+        padding : 3vw;
+    }
+
+    main header .content .left,main header .content .right {
+        display: flex;
+        flex-direction: column;
+        height : 100%;
+    }
+    main header .content  {
+        text-align: center;
+    }
+    main header .content  i{
+        font-size: 3vw;
+    }
+    main header .content .middle h1{
+        font-size: 10vw;
+    }
+    main header .content .middle p{
+        font-size: 2vw;
+        letter-spacing: none;
+        word-spacing: none;
+    }
+
+    main header nav{
+        gap : 2.5vh;
+    }
+    main header nav a {
+        font-size: 2vw;
+    }
+
+    /********bottom section**********/
+   main .bottom .left {
+    width : 80%;
+    height : 30%;
+    top:10%;
+   }
+   main .bottom .left div a{
+   font-size: 2vw;
+   }
+   main .bottom .left h1 {
+   font-size: 3vw;
+   line-height: 5vw;
+   }
+   main .bottom .left p {
+   font-size: 2vw;
+   line-height: 3vw;
+   }
+}
